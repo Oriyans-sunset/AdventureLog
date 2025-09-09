@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# AdventureLog
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Playful daily adventure logger built with Expo + expo-router. Log quick moments with an emoji, optional location, and see a whimsical timeline and basic insights.
 
-## Get started
+## Quick Start
 
-1. Install dependencies
+Prerequisites
+- Node.js 18+ (LTS recommended)
+- iOS Simulator (Xcode) or Android Emulator (Android Studio) optional
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+Install and run
 ```bash
-npm run reset-project
+npm install
+npx expo start
+```
+Then press:
+- `i` for iOS Simulator, `a` for Android Emulator, or `w` for Web
+- Or scan the QR code in Expo Go on your device
+
+## Features
+- Daily logs with title + emoji
+- Optional location snapshot (permission asked on first add)
+- Day-wise Journey timeline (Map tab)
+- Stats: weekly total and most-used emoji
+- Themed, safe-area-aware UI with playful fonts
+
+## Configuration
+
+Fonts
+- Custom fonts are loaded in `app/_layout.tsx` (Baloo2, Nunito, SpaceMono).
+
+Storage
+- Uses `@react-native-async-storage/async-storage` to persist logs locally.
+
+Location (optional)
+- Uses `expo-location` to capture a lightweight snapshot and reverse geocode to a city name.
+- If permission is denied or the module is unavailable, logs save without location.
+
+## Scripts
+```bash
+npm run ios      # open iOS simulator
+npm run android  # open Android emulator
+npm run web      # run on web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Deploy a Demo (Web)
 
-## Learn more
+This app is web-ready. You can deploy to Vercel or Netlify.
 
-To learn more about developing your project with Expo, look at the following resources:
+Build static web output
+```bash
+npx expo export --platform web
+# Output: dist/
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Vercel
+- Connect your GitHub repo in Vercel dashboard
+- Set Build Command: `npx expo export --platform web`
+- Set Output Directory: `dist`
+- Deploy
 
-## Join the community
+Netlify
+- New site from Git
+- Build Command: `npx expo export --platform web`
+- Publish directory: `dist`
+- Deploy
 
-Join our community of developers creating universal apps.
+Tip: After adding packages or assets, if local dev behaves oddly, clear the Metro cache:
+```bash
+npx expo start -c
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Share on Device (Expo Go)
+For quick demos, start the dev server and share the QR code. You can also enable the tunnel in the CLI to share over the internet temporarily.
+
+## Notes
+- The Stats screen does not require native maps. The Journey tab is a custom timeline (no native map dependency).
+- If you add native modules later (e.g., react-native-maps), follow their installation docs and rebuild as needed.
