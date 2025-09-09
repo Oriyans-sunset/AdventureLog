@@ -1,11 +1,11 @@
 # AdventureLog
 
-Playful daily adventure logger built with Expo + expo-router. Log quick moments with an emoji, optional location, and see a whimsical timeline and basic insights.
+Adventure logger built with Expo. Log quick moments with an emoji, optional location, and see a whimsical timeline and basic insights.
 
 ## Quick Start
 
 Prerequisites
-- Node.js 18+ (LTS recommended)
+- Node.js
 - iOS Simulator (Xcode) or Android Emulator (Android Studio) optional
 
 Install and run
@@ -14,15 +14,11 @@ npm install
 npx expo start
 ```
 Then press:
-- `i` for iOS Simulator, `a` for Android Emulator, or `w` for Web
+- `i` for iOS Simulator, `a` for Android Emulator
 - Or scan the QR code in Expo Go on your device
 
-## Features
-- Daily logs with title + emoji
-- Optional location snapshot (permission asked on first add)
-- Day-wise Journey timeline (Map tab)
-- Stats: weekly total and most-used emoji
-- Themed, safe-area-aware UI with playful fonts
+## AI usage
+Project was coded using OpenAI Codex. Chat history is not unfortunately not available for Codex.
 
 ## Demo (Expo Link)
 
@@ -47,9 +43,6 @@ Stats
 <img width="250" alt="IMG_3216-portrait" src="https://github.com/user-attachments/assets/ee4da669-22a5-46e9-85e9-752d2d48d734" />
 
 ## Configuration
-
-Fonts
-- Custom fonts are loaded in `app/_layout.tsx` (Baloo2, Nunito, SpaceMono).
 
 Storage
 - Uses `@react-native-async-storage/async-storage` to persist logs locally.
