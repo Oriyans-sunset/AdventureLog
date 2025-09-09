@@ -4,7 +4,11 @@
     "slug": "AdventureLog",
     "version": "1.0.0",
     "orientation": "portrait",
+    "owner": "priyanshu03",
     "icon": "./assets/images/icon.png",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "scheme": "adventurelog",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -37,6 +41,15 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "18d01be1-92a7-4b46-88d4-8a8795c60cf6"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/18d01be1-92a7-4b46-88d4-8a8795c60cf6"
     }
   }
 }
