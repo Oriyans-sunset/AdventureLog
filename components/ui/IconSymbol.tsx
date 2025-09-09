@@ -18,6 +18,20 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  // Added for current tab icons
+  'book.fill': 'book',
+  'list.bullet': 'format-list-bulleted',
+  'map.fill': 'map',
+  // Added for daily adventures icon options
+  'cup.and.saucer.fill': 'local-cafe',
+  'figure.walk': 'directions-walk',
+  'fork.knife': 'restaurant',
+  'bicycle': 'directions-bike',
+  'leaf.fill': 'eco',
+  'camera.fill': 'photo-camera',
+  // Stats tab
+  'chart.bar.fill': 'insert-chart',
+  'calendar': 'calendar-today',
 } as IconMapping;
 
 /**
