@@ -28,23 +28,23 @@ Then press:
 
 Open in Expo Go:
 
-https://expo.dev/preview/update?message=first+preview&updateRuntimeVersion=exposdk%3A53.0.0&createdAt=2025-09-09T16%3A46%3A49.596Z&slug=exp&projectId=18d01be1-92a7-4b46-88d4-8a8795c60cf6&group=9e6c68f4-5027-4a32-ae67-c3e0cb822460
+<img width="250" height="250" alt="Screenshot 2025-09-09 at 22 58 25" src="https://github.com/user-attachments/assets/ab7b6207-57da-40ed-89ca-b9a4fb211f60" />
 
-If the link prompts for login, sign in to Expo Go with the same account used to publish.
+Using [link](https://expo.dev/preview/update?message=first+preview&updateRuntimeVersion=exposdk%3A53.0.0&createdAt=2025-09-09T16%3A46%3A49.596Z&slug=exp&projectId=18d01be1-92a7-4b46-88d4-8a8795c60cf6&group=9e6c68f4-5027-4a32-ae67-c3e0cb822460)
 
 ## Screenshots
 
-Daily (example)
+Daily
 
-![Daily](assets/images/mountain-bike-cuate.png)
+<img width="250" alt="IMG_3214-portrait" src="https://github.com/user-attachments/assets/e84e22e7-a66d-4718-acd9-f4b8678ade40" />
 
-Journey Empty State (example)
+Journey
 
-![Journey Empty](assets/images/calender.png)
+<img width="250" alt="IMG_3215-portrait" src="https://github.com/user-attachments/assets/f8c2a980-59a9-446c-b644-ff1a18563a26" />
 
-Stats Medal (example)
+Stats 
 
-![Stats](assets/images/medal.png)
+<img width="250" alt="IMG_3216-portrait" src="https://github.com/user-attachments/assets/ee4da669-22a5-46e9-85e9-752d2d48d734" />
 
 ## Configuration
 
