@@ -64,37 +64,3 @@ npm run ios      # open iOS simulator
 npm run android  # open Android emulator
 npm run web      # run on web
 ```
-
-## Deploy a Demo (Web)
-
-This app is web-ready. You can deploy to Vercel or Netlify.
-
-Build static web output
-```bash
-npx expo export --platform web
-# Output: dist/
-```
-
-Vercel
-- Connect your GitHub repo in Vercel dashboard
-- Set Build Command: `npx expo export --platform web`
-- Set Output Directory: `dist`
-- Deploy
-
-Netlify
-- New site from Git
-- Build Command: `npx expo export --platform web`
-- Publish directory: `dist`
-- Deploy
-
-Tip: After adding packages or assets, if local dev behaves oddly, clear the Metro cache:
-```bash
-npx expo start -c
-```
-
-## Share on Device (Expo Go)
-For quick demos, start the dev server and share the QR code. You can also enable the tunnel in the CLI to share over the internet temporarily.
-
-## Notes
-- The Stats screen does not require native maps. The Journey tab is a custom timeline (no native map dependency).
-- If you add native modules later (e.g., react-native-maps), follow their installation docs and rebuild as needed.
